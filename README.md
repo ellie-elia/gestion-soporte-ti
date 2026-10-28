@@ -5,6 +5,8 @@ Registro técnico de incidentes, pruebas, evidencias y continuidad del soporte d
 Trabajo grupal — **Simulación profesional de soporte técnico de TI** (Hito 4).
 Universidad Privada Franz Tamayo (UNIFRANZ) — Ingeniería de Sistemas.
 
+Procedimiento seguido: **Guía rápida de atención INC-01 v1.0** (Ing. Diego Cárdenas Sejas).
+
 ---
 
 ## Integrantes y responsabilidades

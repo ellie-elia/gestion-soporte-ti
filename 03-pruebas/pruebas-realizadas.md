@@ -21,7 +21,7 @@ Secuencia de pruebas que se han hecho hasta ahora. Cada una con objetivo, qué s
 - Entradas de arranque: Windows Boot Manager (EFI) + SATA HDD (Legacy), ambas sobre el mismo disco.
 
 **Conclusión:** el disco responde al firmware. La configuración de arranque mezcla Legacy y UEFI, lo que queda como punto a revisar.
-**Evidencia:** fotos del BIOS Information y BIOS Boot.
+**Evidencia:** `04-evidencias/Evidencias-laptop.docx`, secciones "CARACTERÍSTICAS" (BIOS Information y BIOS Boot).
 
 ## P3 — Inspección física interna
 
@@ -29,7 +29,7 @@ Secuencia de pruebas que se han hecho hasta ahora. Cada una con objetivo, qué s
 **Procedimiento:** apagar y desconectar el equipo, retirar los tornillos de la tapa posterior con destornillador estrella, abrir y observar.
 **Resultado:** placa base, ventilador, disipador, batería CMOS, altavoces, módulo de RAM y ranura M.2 WiFi sin daño visible. Zócalo del disco accesible.
 **Conclusión:** no se observan daños visibles ni componentes sueltos.
-**Evidencia:** fotos del interior.
+**Evidencia:** `04-evidencias/Evidencias-laptop.docx`, secciones "Inicio de desarmado", "Herramientas", "Componentes" y "Memoria".
 
 ## P4 — Cambio de disco (WD Blue 1 TB → Crucial BX500 240 GB)
 
@@ -37,9 +37,9 @@ Secuencia de pruebas que se han hecho hasta ahora. Cada una con objetivo, qué s
 **Procedimiento:** retirar el disco original y colocar el disco de prueba.
 **Resultado:** el equipo arranca, intenta cargar Windows y entra en "Reparación automática". El sistema muestra el mensaje **"Reparación automática no pudo reparar tu PC"**, con registro en `E:\Recovery\WindowsRE\Winre.wim\System32\Logfiles\Srt\SrtTrail.txt`.
 **Conclusión:** el equipo sí arranca y accede a la partición de recuperación, pero no puede reparar automáticamente. Falta revisar el log SrtTrail.txt y las Opciones avanzadas.
-**Evidencia:** fotos de ambos discos y de la pantalla de Reparación automática.
+**Evidencia:** `04-evidencias/Evidencias-laptop.docx`, secciones "Cambio — disco antiguo / disco nuevo" y "Después del cambio".
 
-> **Nota:** la secuencia exacta entre P1 y P4 (qué disco estaba cuando se vio el bucle de "Preparando dispositivos") queda por confirmar con el equipo. En las fotos del BIOS ya aparece el Crucial BX500.
+> **Nota de cronología (P1 ↔ P4):** la secuencia exacta entre ver el bucle de "Preparando dispositivos" y el cambio de disco no quedó anotada en el momento. La foto del BIOS Information muestra que al momento de esa revisión el disco montado era el Crucial BX500 (CT240BX500SSD1), no el WD Blue 1 TB que también aparece en las fotos. La lectura más coherente con las imágenes es que la cuadrilla trabajó con el Crucial a lo largo del proceso y el WD Blue fue retirado o manipulado durante la inspección física, pero esto no está confirmado por una nota del momento.
 
 ## P5 — Preparación del medio USB con la ISO
 
