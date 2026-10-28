@@ -1,19 +1,10 @@
 # Reporte de ActivityWatch
 
-Reporte del periodo de trabajo exportado desde ActivityWatch, cuando esté disponible en la estación asignada.
+Pendiente de incorporar.
 
-Es un recurso complementario y no sustituye las evidencias técnicas.
+El docente indica en la guía del hito que ActivityWatch se usa "cuando esté disponible en la estación asignada". Hasta ahora no se ha generado el reporte del periodo de trabajo. Se añadirá cuando se tenga el export.
 
----
+## Limitaciones previstas
 
-## Periodo registrado
-
-> _Pendiente: indicar fecha y rango horario del registro._
-
-## Limitaciones
-
-> _Pendiente: indicar qué partes del trabajo no quedaron registradas y por qué (p. ej. equipo sin ActivityWatch instalado, pausas, tareas fuera de la estación)._
-
-## Reporte
-
-> _Adjuntar el export (CSV / JSON / captura) en esta carpeta y referenciarlo aquí._
+- Parte del trabajo se hizo con el equipo apagado o fuera del escritorio (inspección física, cambio de disco), por lo que ActivityWatch no lo registrará.
+- Las acciones hechas desde Reparación automática / Opciones avanzadas tampoco quedan registradas.
