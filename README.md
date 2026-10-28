@@ -21,7 +21,7 @@ Universidad Privada Franz Tamayo (UNIFRANZ) — Ingeniería de Sistemas.
 
 ## Estado del incidente
 
-> _Pendiente: a completar cuando se reciba el ticket por correo._
+Ticket **INC-01** — Falla de inicio de equipo portátil. Lenovo IdeaPad 320-14ISK. En trabajo.
 
 ---
 
