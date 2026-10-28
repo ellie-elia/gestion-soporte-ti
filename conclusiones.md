@@ -15,6 +15,7 @@ El equipo todavía no inicia Windows. El último estado observado es la pantalla
 2. BIOS revisado: CPU, RAM y disco detectados; configuración de arranque con mezcla Legacy + UEFI.
 3. Inspección física interna: sin daños visibles.
 4. Cambio de disco (WD Blue 1 TB → Crucial BX500 240 GB): el equipo arranca pero cae en Reparación automática.
+5. Medio USB con la ISO autorizada preparado con Rufus (GPT + UEFI no CSM).
 
 ## Lo que todavía no se puede concluir
 
@@ -29,7 +30,7 @@ El equipo todavía no inicia Windows. El último estado observado es la pantalla
    - Probar **Reparación de inicio**.
    - Probar **Restaurar sistema** si hay puntos de restauración.
    - Probar **Desinstalar actualizaciones recientes**.
-2. Si lo anterior no resuelve, preparar medio USB con la ISO autorizada (`CCSA_X64_FRE_ES-ES_DB5.iso`) desde Proxmox vía WinSCP, según el paso 4 de la guía del docente.
+2. Cambiar el BIOS a modo UEFI y arrancar desde la USB ya preparada con la ISO `CCSA_X64FRE_ES-ES_DV5.iso`.
 3. Antes de reinstalar: respaldar los datos accesibles del disco original.
 4. Test SMART del disco antes de descartar el almacenamiento.
 5. Confirmar con el equipo la cronología exacta entre las pruebas P1 y P4 y dejarla en la bitácora.

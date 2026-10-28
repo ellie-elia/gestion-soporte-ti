@@ -13,6 +13,7 @@ Registro cronológico de lo que la cuadrilla ha hecho.
 - Prueba con otro disco (Crucial BX500 240 GB en lugar del WD Blue 1 TB original). El equipo arranca y entra en Reparación automática, con mensaje **"no pudo reparar tu PC"** y log en `SrtTrail.txt`.
 - Documentación en `04-evidencias/Evidencias-laptop.docx`.
 - Primera subida al repositorio: estructura inicial, ticket, evidencias y estado del incidente.
+- Preparación del medio USB con la ISO: ISO descargada desde el servidor Proxmox vía WinSCP y grabada con Rufus en modo GPT / UEFI (no CSM). Evidencias en `04-evidencias/Proceso-instalacion-ISO.docx`.
 
 ## Dificultades
 
@@ -23,7 +24,10 @@ Registro cronológico de lo que la cuadrilla ha hecho.
 
 - [ ] Revisar `SrtTrail.txt` desde Opciones avanzadas → Símbolo del sistema.
 - [ ] Probar Reparación de inicio, Restaurar sistema, Desinstalar actualizaciones recientes.
-- [ ] Si lo anterior no resuelve, preparar medio USB con la ISO (ver guía del docente, paso 4) para reinstalar Windows.
+- [x] Preparar medio USB con la ISO (ver guía del docente, paso 4).
+- [ ] Cambiar BIOS a UEFI y arrancar desde la USB preparada.
+- [ ] Si procede, reinstalar Windows; respaldar datos accesibles del disco original antes.
 - [ ] Test SMART del disco.
 - [ ] Confirmar con el equipo la secuencia real entre P1 y P4.
+- [ ] Confirmar con el docente el nombre correcto de la ISO (DB5 vs DV5).
 - [ ] Reporte de ActivityWatch cuando esté disponible.

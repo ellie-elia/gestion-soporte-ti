@@ -41,6 +41,22 @@ Secuencia de pruebas que se han hecho hasta ahora. Cada una con objetivo, qué s
 
 > **Nota:** la secuencia exacta entre P1 y P4 (qué disco estaba cuando se vio el bucle de "Preparando dispositivos") queda por confirmar con el equipo. En las fotos del BIOS ya aparece el Crucial BX500.
 
+## P5 — Preparación del medio USB con la ISO
+
+**Objetivo:** tener una USB arrancable con la ISO autorizada para intentar la recuperación o reinstalación.
+**Procedimiento:**
+1. Localizar la ISO en el servidor Proxmox del laboratorio (`https://192.168.50.175:8006` → Storage local → ISO Images).
+2. Transferirla al equipo local vía WinSCP (sesión `root@192.168.50.175`, ruta `/var/lib/vz/template/iso/`).
+3. Crear la USB arrancable con Rufus 4.15.2396 (esquema GPT, sistema de destino UEFI (no CSM), FAT32).
+
+**Resultado:** USB en estado "PREPARADO" con la ISO `CCSA_X64FRE_ES-ES_DV5.iso` lista para arrancar.
+**Conclusión:** medio de instalación listo. Queda arrancar el equipo desde la USB y continuar con la recuperación/instalación.
+**Evidencia:** `04-evidencias/Proceso-instalacion-ISO.docx`.
+
+> **Nota sobre el nombre de la ISO:** la guía del docente la lista como `CCSA_X64_FRE_ES-ES_DB5.iso`. La que está en el servidor Proxmox y la que se grabó en la USB es `CCSA_X64FRE_ES-ES_DV5.iso`. A confirmar con el docente.
+>
+> **Nota sobre modo de arranque:** la USB se preparó para UEFI puro (GPT + UEFI no CSM), pero el BIOS del equipo está en Boot Mode = Legacy Support. Habrá que cambiar el BIOS a UEFI para arrancar desde esta USB.
+
 ## Pendientes de prueba
 
 - Revisar el contenido de `SrtTrail.txt` desde Opciones avanzadas → Símbolo del sistema.
