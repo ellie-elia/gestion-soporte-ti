@@ -29,5 +29,4 @@ Registro cronológico de lo que la cuadrilla ha hecho.
 - [ ] Si procede, reinstalar Windows; respaldar datos accesibles del disco original antes.
 - [ ] Test SMART del disco.
 - [ ] Confirmar con el equipo la secuencia real entre P1 y P4.
-- [ ] Confirmar con el docente el nombre correcto de la ISO (DB5 vs DV5).
 - [ ] Reporte de ActivityWatch cuando esté disponible.

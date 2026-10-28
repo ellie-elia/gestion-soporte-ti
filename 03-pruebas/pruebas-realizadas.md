@@ -53,7 +53,7 @@ Secuencia de pruebas que se han hecho hasta ahora. Cada una con objetivo, qué s
 **Conclusión:** medio de instalación listo. Queda arrancar el equipo desde la USB y continuar con la recuperación/instalación.
 **Evidencia:** `04-evidencias/Proceso-instalacion-ISO.docx`.
 
-> **Nota sobre el nombre de la ISO:** la guía del docente la lista como `CCSA_X64_FRE_ES-ES_DB5.iso`. La que está en el servidor Proxmox y la que se grabó en la USB es `CCSA_X64FRE_ES-ES_DV5.iso`. A confirmar con el docente.
+> **Nota sobre el nombre de la ISO:** la guía del docente tiene un typo (dice `CCSA_X64_FRE_ES-ES_DB5.iso`). El nombre correcto es `CCSA_X64FRE_ES-ES_DV5.iso`, que es la ISO disponible en el servidor Proxmox del laboratorio y la que se usó para preparar la USB. Evidencia en `04-evidencias/Proceso-instalacion-ISO.docx` (capturas de Proxmox y WinSCP).
 >
 > **Nota sobre modo de arranque:** la USB se preparó para UEFI puro (GPT + UEFI no CSM), pero el BIOS del equipo está en Boot Mode = Legacy Support. Habrá que cambiar el BIOS a UEFI para arrancar desde esta USB.
 
